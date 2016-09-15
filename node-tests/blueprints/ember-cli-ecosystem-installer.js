@@ -42,8 +42,7 @@ var otherPkgsToSelectByDefaylt = [
   'ember-load-initializers',
   'ember-resolver',
   'ember-welcome-page',
-  'loader.js',
-  'ember-frost-lts'
+  'loader.js'
 ]
 
 var installedPkgsMochaCoreD3 = [
@@ -55,7 +54,7 @@ var installedPkgsChai = [
   {name: 'ember-cli-mocha', version: '0.2.0', dev: true}        // installed
 ]
 
-describe('Acceptance: ember generate ember-frost-lts', function () {
+describe('Acceptance: ember generate ember-cli-ecosystem-installer', function () {
   setupTestHooks(this)
 
   var prompt, packagesToInstall, packagesToUninstall
@@ -88,7 +87,7 @@ describe('Acceptance: ember generate ember-frost-lts', function () {
   })
 
   it('No package to install (empty file)', function () {
-    var args = ['ember-frost-lts', '--lts-file=node-tests/mock/empty-lts.json']
+    var args = ['ember-cli-ecosystem-installer', '--lts-file=node-tests/mock/empty-lts.json']
     td.when(prompt(td.matchers.anything())).thenResolve({
       userInputOtherGroups: otherPkgsToSelectByDefaylt,
       confirmSelection: 'y'
@@ -103,7 +102,7 @@ describe('Acceptance: ember generate ember-frost-lts', function () {
   })
 
   it('Single package', function () {
-    var args = ['ember-frost-lts', '--lts-file=node-tests/mock/single-package-lts.json']
+    var args = ['ember-cli-ecosystem-installer', '--lts-file=node-tests/mock/single-package-lts.json']
     td.when(prompt(td.matchers.anything())).thenResolve({
       userInputRecommendGroups: ['ember-prop-types'],
       userInputOtherGroups: otherPkgsToSelectByDefaylt,
@@ -120,7 +119,7 @@ describe('Acceptance: ember generate ember-frost-lts', function () {
   })
 
   it('Single group', function () {
-    var args = ['ember-frost-lts', '--lts-file=node-tests/mock/single-group-lts.json']
+    var args = ['ember-cli-ecosystem-installer', '--lts-file=node-tests/mock/single-group-lts.json']
     td.when(prompt(td.matchers.anything())).thenResolve({
       userInputRecommendGroups: ['package3'],
       userInputOtherGroups: otherPkgsToSelectByDefaylt,
@@ -139,7 +138,7 @@ describe('Acceptance: ember generate ember-frost-lts', function () {
   describe('Package and group', function () {
     var args
     beforeEach(function () {
-      args = ['ember-frost-lts', '--lts-file=node-tests/mock/package-group-lts.json']
+      args = ['ember-cli-ecosystem-installer', '--lts-file=node-tests/mock/package-group-lts.json']
     })
 
     describe('User request', function () {
@@ -551,7 +550,7 @@ describe('Acceptance: ember generate ember-frost-lts', function () {
   describe('Mandatory', function () {
     var args
     beforeEach(function () {
-      args = ['ember-frost-lts', '--lts-file=node-tests/mock/package-group-lts-mandatory.json']
+      args = ['ember-cli-ecosystem-installer', '--lts-file=node-tests/mock/package-group-lts-mandatory.json']
     })
 
     it('Already installed package', function () {
@@ -618,7 +617,7 @@ describe('Acceptance: ember generate ember-frost-lts', function () {
   describe('Mandatory + Optional', function () {
     var args
     beforeEach(function () {
-      args = ['ember-frost-lts', '--lts-file=node-tests/mock/package-group-lts-mandatory-optional.json']
+      args = ['ember-cli-ecosystem-installer', '--lts-file=node-tests/mock/package-group-lts-mandatory-optional.json']
     })
 
     it('Already installed package', function () {

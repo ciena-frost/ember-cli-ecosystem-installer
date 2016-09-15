@@ -1,5 +1,5 @@
 {
-  "name": "ember-frost-lts",
+  "name": "ember-cli-ecosystem-installer",
   "version": "0.1.6",
   "description": "The default blueprint for ember-cli addons.",
   "directories": {
@@ -13,7 +13,7 @@
     "utest": "mocha node-tests --recursive",
     "lint": "eslint *.js addon app blueprints config tests"
   },
-  "repository": "git@github.com:ciena-frost/ember-frost-lts.git",
+  "repository": "git@github.com:ciena-frost/ember-ecli-ecosystem-installer.git",
   "engines": {
     "node": ">= 5.0.0"
   },

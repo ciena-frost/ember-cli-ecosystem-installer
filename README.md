@@ -9,6 +9,11 @@
 
 [![Travis][ci-img]][ci-url] [![Coveralls][cov-img]][cov-url] [![NPM][npm-img]][npm-url]
 
+Work in progress !
+
+----
+TODO update the documentation
+
 # ember-frost-lts
 
  * [Installation](#Installation)

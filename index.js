@@ -3,7 +3,7 @@
 'use strict'
 
 module.exports = {
-  name: 'ember-frost-lts',
+  name: 'ember-cli-ecosystem-installer',
 
   included: function (app) {
     this._super.included(app)
