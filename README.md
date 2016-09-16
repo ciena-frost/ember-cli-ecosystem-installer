@@ -1,11 +1,11 @@
-[ci-img]: https://img.shields.io/travis/ciena-frost/ember-frost-lts.svg "Travis CI Build Status"
-[ci-url]: https://travis-ci.org/ciena-frost/ember-frost-lts
+[ci-img]: https://img.shields.io/travis/ciena-blueplanet/ember-cli-ecoystem-installer.svg "Travis CI Build Status"
+[ci-url]: https://travis-ci.org/ciena-blueplanet/ember-cli-ecoystem-installer
 
-[cov-img]: https://img.shields.io/coveralls/ciena-frost/ember-frost-lts.svg "Coveralls Code Coverage"
-[cov-url]: https://coveralls.io/github/ciena-frost/ember-frost-lts
+[cov-img]: https://img.shields.io/coveralls/ciena-blueplanet/ember-cli-ecoystem-installer.svg "Coveralls Code Coverage"
+[cov-url]: https://coveralls.io/github/ciena-blueplanet/ember-cli-ecoystem-installer
 
-[npm-img]: https://img.shields.io/npm/v/ember-frost-lts.svg "NPM Version"
-[npm-url]: https://www.npmjs.com/package/ember-frost-lts
+[npm-img]: https://img.shields.io/npm/v/ember-cli-ecoystem-installer.svg "NPM Version"
+[npm-url]: https://www.npmjs.com/package/ember-cli-ecoystem-installer
 
 [![Travis][ci-img]][ci-url] [![Coveralls][cov-img]][cov-url] [![NPM][npm-img]][npm-url]
 
